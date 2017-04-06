@@ -12,3 +12,4 @@ AAZ+ 1 = ABA
 
 ZZZ+1 = AAAA
 
+A001+1 = A002
