@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringHelper.Lib", "StringHelper.Lib\StringHelper.Lib.csproj", "{619DBFD5-975C-4480-A945-75507FF64B3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringIncrease.Lib", "StringHelper.Lib\StringIncrease.Lib.csproj", "{619DBFD5-975C-4480-A945-75507FF64B3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{11996FA6-6EA3-47E0-ABED-3AC6235FA6B0}"
 EndProject

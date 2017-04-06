@@ -1,4 +1,4 @@
-using StringHelper.Lib;
+using StringIncrease.Lib;
 using System;
 using System.Collections.Generic;
 using Xunit;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace StringHelper.Lib
+namespace StringIncrease.Lib
 {
     public static class StringHelper
     {
