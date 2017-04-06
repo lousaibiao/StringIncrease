@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace StringIncrease.Lib
 {
@@ -40,13 +41,23 @@ namespace StringIncrease.Lib
             return rst;
             //return String.Join("", result);
         }
-        private static (bool carry, char) AddNum(char c, int number)
+
+        public static string Increase2(this string s, int addValue = 1)
         {
-            if (c + number > 90) {
-                return (true, (char)((c + number) % 90));
-            } else {
-                return (false, (char)(c + number));
+            if (string.IsNullOrEmpty(s)) {
+                throw new Exception("不能为空");
             }
+            /*
+             A001 +1 = A002
+             A009 + 1 = A010;
+             */
+            var reg = Regex.Match(s, "(^[A-Za-z]+)(\\d+$)");
+            if (!reg.Success) {
+                throw new Exception("格式不匹配");
+            }
+            var str = reg.Groups[1].Value;
+            var newNum = Convert.ToInt32(reg.Groups[2].Value)+addValue;
+            return str + newNum.ToString("000");
         }
     }
 }

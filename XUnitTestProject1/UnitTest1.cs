@@ -1,3 +1,4 @@
+
 using StringIncrease.Lib;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ namespace XUnitTestProject1
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void Increase_Test()
         {
             var A = "A";
             Assert.Equal("B", A.Increase(1));
@@ -37,6 +38,18 @@ namespace XUnitTestProject1
             var ZZZ = "ZZZ";
             Assert.Equal("AAAA", ZZZ.Increase());
 
+        }
+        [Fact]
+        public void Increase2_Test()
+        {
+            var A001 = "A001";
+            Assert.Equal("A002", A001.Increase2());
+
+            var A009 = "A009";
+            Assert.Equal("A010", A009.Increase2());
+
+            var BA109 = "BA109";
+            Assert.Equal("BA110", BA109.Increase2());
         }
     }
 }
