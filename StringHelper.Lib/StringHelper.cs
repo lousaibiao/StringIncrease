@@ -55,7 +55,7 @@ namespace StringIncrease.Lib
             if (!reg.Success) {
                 throw new Exception("格式不匹配");
             }
-            var str = reg.Groups[1].Value;
+            var str = reg.Groups[1].Value;//group 0 是本身.
             var newNum = Convert.ToInt32(reg.Groups[2].Value)+addValue;
             return str + newNum.ToString("000");
         }
